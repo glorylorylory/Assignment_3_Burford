@@ -1,0 +1,227 @@
+body {
+    background-color: white;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+a {
+    display: block;
+    margin: 0 auto 50px;
+    width: 100px;
+    text-decoration: none;
+    color: #dead4a;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #dead4a;
+    transition: .5s;
+    font-weight: 600;
+}
+
+a:hover {
+    background-color: #dead4a;
+    color: white;
+}
+
+#container {
+    width: 415px;
+    height: 420px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#painting {
+    max-width: fit-content;
+    background-color: black;
+}
+
+#bluetriangle {
+    width: 0;
+    height: 0;
+    border-top: 80px solid #9fa7b1;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid #9fa7b1;
+
+    animation: bluechange infinite 2s alternate ease-in-out;
+}
+
+@keyframes bluechange {
+    from {
+        border-top: 80px solid #9fa7b1;
+        border-left: 80px solid #9fa7b1;
+    }
+    to {
+        border-top: 80px solid #60584e;
+        border-left: 80px solid #60584e;
+    }
+  }
+
+#blacktriangle {
+    margin-left: -50px;
+    margin-top: -180px;
+
+    width: 0;
+    height: 0;
+    border-top: 220px solid transparent;
+    border-right: 225px solid #231f1d;
+    border-bottom: 220px solid transparent;
+    border-left: 0 solid transparent;
+
+    animation: blackchange infinite 2s alternate ease-out;
+}
+
+@keyframes blackchange {
+    from {
+        border-right: 225px solid #231f1d;
+    }
+    to {
+        border-right: 225px solid #dce0e2;
+    }
+  }
+
+#yellowtriangle {
+    margin-top: -180px;
+    margin-left: -5px;
+
+    width: 0;
+    height: 0;
+    border-top: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 90px solid transparent;
+    border-left: 90px solid #dead4a;
+
+    animation: yellowchange infinite 2s alternate ease-in;
+}
+
+@keyframes yellowchange {
+    from {
+        border-left: 90px solid #dead4a;
+    }
+    to {
+        border-left: 90px solid #2152b5;
+    }
+  }
+
+#whitetriangle {
+    margin-top: -186px;
+    margin-left: -11px;
+
+    width: 0;
+    height: 0;
+    border-top: 95px solid transparent;
+    border-right: 95px solid transparent;
+    border-bottom: 95px solid #ded5ce;
+    border-left: 95px solid transparent;
+
+    animation: whitechange infinite 2s alternate linear;
+}
+
+@keyframes whitechange {
+    from {
+        border-bottom: 95px solid #ded5ce;
+    }
+    to {
+        border-bottom: 95px solid #212a31;
+    }
+  }
+
+#bluetriangle2 {
+    margin-left: 175px;  
+    margin-top: -192px;
+
+    width: 0;
+    height: 0;
+    border-top: 95px solid transparent;
+    border-right: 95px solid transparent;
+    border-bottom: 95px solid #9fa7b1;
+    border-left: 95px solid #9fa7b1;
+
+    animation: bluechange2 infinite 2s alternate ease-in-out;
+}
+
+@keyframes bluechange2 {
+    from {
+        border-bottom: 95px solid #9fa7b1;
+        border-left: 95px solid #9fa7b1;
+    }
+    to {
+        border-bottom: 95px solid #60584e;
+        border-left: 95px solid #60584e;
+    }
+  }
+
+#whitetriangle2 {
+    margin-left: 175px;
+    margin-top: -479px;
+
+    width: 0;
+    height: 0;
+    border-top: 145px solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 145px solid transparent;
+    border-left: 145px solid #ded5ce;
+
+    animation: whitechange2 infinite 2s alternate linear;
+}
+
+@keyframes whitechange2 {
+    from {
+        border-left: 145px solid #ded5ce;
+    }
+    to {
+        border-left: 145px solid #212a31;
+    }
+  }
+
+#greytriangle {
+    margin-left: 220px;
+    margin-top: -244px;
+
+    width: 0;
+    height: 0;
+    border-top: 100px solid #6b6567;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid transparent;
+
+    animation: greychange infinite 2s alternate ease-out;
+}
+
+@keyframes greychange {
+    from {
+        border-top: 100px solid #6b6567;
+    }
+    to {
+        border-top: 100px solid #949a98;
+    }
+  }
+
+#redtriangle {
+    margin-left: 175px;  
+    margin-top: -212px;
+
+    width: 0;
+    height: 0;
+    border-top: 255px solid transparent;
+    border-right: 255px solid #b11405;
+    border-bottom: 255px solid transparent;
+    border-left: 0 solid transparent;
+
+    animation: redchange infinite 2s alternate ease-in;
+}
+
+@keyframes redchange {
+    from {
+        border-right: 255px solid #b11405;
+    }
+    to {
+        border-right: 255px solid #4eebfa;
+    }
+  }
